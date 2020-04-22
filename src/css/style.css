@@ -47,7 +47,7 @@ body{
     position: absolute;
     height: 2px;
     right: 30%;
-    background-color: #5CB5C3;
+    background-color: #e88888;
     bottom: 0px;
 }
 
@@ -163,7 +163,7 @@ header .navbar ul li a::before{
 }
 
 header.fixed .navbar ul li a::before{
-    background-color: #5CB5C3;
+    background-color: #e88888;
 }
 
 header .navbar ul li a:hover::before{
@@ -184,7 +184,7 @@ header .navbar ul li a.active::before{
 
 .home{
     min-height: 100vh;
-    background-image: url("../img/Header/background_flip_blue.png");
+    background-image: url("../img/Header/background_flip.png");
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -271,15 +271,14 @@ header .navbar ul li a.active::before{
 
 
 
+
+
+
 /*A propos de moi */
 
 .about-me{
     padding: 100px 15px; 
     background-color: #ffffff;
-}
-
-img {
-    max-width: 100%;
 }
 
 .text-uppercase{
@@ -294,95 +293,59 @@ img {
     letter-spacing: 2px;
 }
 
-
-.about-me .about-content .illustration{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    position: relative;
-    cursor: pointer;
+.about-me .about-content {
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.about-me .about-content .illustration img{
-    width: 100%;
-    display: block;
+.about-me .about-content .texte{
+    display: flex;
+    align-self: center;
+    margin-bottom: 50px;
+    max-width: 75%;
+    text-align: center;
+    color: #1e4847;
 }
 
-.about-me .about-content .text{
-    flex: 0 0 66.66%;
-    max-width: 66.66%;
-    padding-left: 30px;
-    padding-right: 20px;
+.about-me .about-content .description{
+    display: flex;
+    justify-content: center;
 }
 
-.about-me .about-content .text h4{
+.about-me .about-content .description iframe{
+
+  width: 854px;
+  height: 480px;
+  display: inline-block;
+  border: 20px solid black;
+  border-radius: 20px;
+
+}
+
+.about-me .about-content h4{
     font-size: 40px;
     font-weight: 700;
     margin: 0 0 5px;
     color: #000000;
 }
 
-.about-me .about-content .text h6{
+.about-me .about-content h6{
     font-size: 25px;
     font-weight: 500;
     margin: 0 0 15px;
     color: #000000;
 }
 
-.about-me .about-content .text h6 span{
-    font-weight: bolder;
-}
-
-.about-me .about-content .text p{
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 20px;
-    color: black;
-    margin: 0 0 20px;
-}
-
-.about-me .about-content .text p span{
-    font-weight: bolder;
-}
-
-.about-me .about-content .text .info{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
-
-.about-me .about-content .text .info .list{
-    flex:0 0 calc(50% - 15px);
-    max-width: calc(50% - 15px);
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    border-bottom: 1px solid gray;
-    padding-bottom: 10px;
-
-}
-
-.about-me .about-content .text .info .list label {
-    padding-right: 10px;
-    color: #000000;
-    font-weight: 600;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    
-}
-
-.about-me .about-content .text .info .list p{
-    margin-top: 0;
-    padding-top: 18px;
-    text-align: left;
-}
-
-.about-me .about-content .text .social-links{
+.about-me .about-content .social-links{
     padding-top: 30px;
+    display: flex;
+    width: 20%;
+    margin: auto;
 }
 
-.about-me .about-content .text .social-links a{
+.about-me .about-content .social-links a{
     height: 50px;
     width: 50px;
     background-color: #000000;
@@ -396,12 +359,12 @@ img {
     transition: all .5s ease;
 }
 
-.about-me .about-content .text .social-links a:hover{
+.about-me .about-content .social-links a:hover{
     background-color: transparent;
 }
 
 
-.about-me .about-content .text .social-links a .fa{
+.about-me .about-content .social-links a .fa{
     color: #ffffff;
     font-size: 25px;
     -webkit-transition: all .5s ease;
@@ -409,134 +372,12 @@ img {
     margin-top: 10px;
 }
 
-.about-me .about-content .text .social-links a:hover .fa{
+.about-me .about-content .social-links a:hover .fa{
     color: #000000;
 }
 
-.about-me .about-content .text .description{
-    max-width: 75%;
-    margin-top: 20px;
-}
 
 
-.about-me .about-content .illustration .illustration-item .inner-overlay{
-    position: absolute;
- 
-    bottom:0;
-    left: 0;
-    
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 10;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: all .5s ease;
-    height: 40%;
-}
-
-.about-me .about-content .illustration .illustration-item:hover .inner-overlay{
-    opacity: 1;
-}
-
-.about-me .about-content .illustration .illustration-item .inner-overlay .fa{
-    height: 50px;
-    width: 50px;
-    background-color: #5CB5C3;;
-    color: #ffffff;
-    display: inline-block;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.about-me .about-content .illustration .illustration-item:hover .inner-overlay .fa{
-    -webkit-animation: galleryIcon .8s ease;
-    animation: galleryIcon .8s ease;
-}
-
-@keyframes galleryIcon{
-    0%{
-        transform: translateY(-20px); opacity:0;
-    }
-    100%{
-        transform: translateY(0); opacity: 1;
-    }
-}
-
-.about-me .about-content .illustration .illustration-item .inner-overlay h4{
-    margin-top: 15px;
-    font-size: 25px;
-    color: #ffffff;
-    font-weight: 600;
-}
-
-
-.about-me .about-content .illustration .illustration-item:hover .inner-overlay h4{
-    -webkit-animation: galleryText .8s ease;
-    animation: galleryText .8s ease;
-}
-
-@keyframes galleryText{
-    0%{
-        transform: translateY(20px); opacity:0;
-    }
-    100%{
-        transform: translateY(0); opacity: 1;
-    }
-}
-
-
-
-
-
-
-/* Popup */
-
-.popup {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    align-items: center;
-}
-
-.popup.show{
-    display: flex;
-}
-
-.popup.hide{
-    display: none;
-}
-
-.popup .close-popup{
-    height: 35px;
-    width: 35px;
-    background-color: #ffffff;
-    color: red;
-    text-align: center;
-    line-height: 35px;
-    position: absolute;
-    right: 10px;
-    top:10px;
-    cursor: pointer;
-    border-radius: 50px;
-    z-index: 101;
-}
-
-.popup iframe{
-    max-width: 90%;
-    max-height: 80%;
-    display: block;
-}
 
 
 
@@ -545,7 +386,7 @@ img {
 /*Mon parcours */
 
 .parcours {
-    background-color: #f5f8fd;
+    background-color: #ffbbba;
     padding: 100px 0px 70px;
 }
 
@@ -577,7 +418,7 @@ img {
 .parcours .parcours-content .box::before{
     content:'';
     height: 2px;
-    background-color: #5CB5C3;;
+    background-color: #1e4847;
     position: absolute;
     bottom: 0px;
     width: 50px;
@@ -593,13 +434,19 @@ img {
 }
 
 .parcours .parcours-content .box .icon{
-    height: 60px;
-    width: 60px;
-    /*background-color: #5CB5C3;*/
+    height: 70px;
+    width: 70px;
     margin: 15px auto 20px;
     border-radius: 50%;
     text-align: center;
 }
+
+.parcours .parcours-content .box .icon img{
+
+    height: 70px;
+    width: 70px;
+}
+
 
 .parcours .parcours-content .box .icon .fa{
     font-size: 25px;
@@ -617,7 +464,7 @@ img {
 .parcours .parcours-content .box h4{
     font-size: 15px;
     font-weight: 400;
-    color: #5CB5C3;
+    color: #1e4847;
     margin: 0;
 }
 
@@ -688,7 +535,7 @@ margin: 15px 0 0px;
 }
 
 .competences .competences-content .competences-box .competence-bar .competence-bar-in{
-    background-color: #5CB5C3;;
+    background-color: #1e4847;
     position: absolute;
     left: 0;
     top: 0;
@@ -742,8 +589,8 @@ margin: 15px 0 0px;
 }
 
 .portfolio .filter-buttons ul li.active{
-    color: #5CB5C3;;
-    border-bottom: 2px solid #5CB5C3;;
+    color: #1e4847;
+    border-bottom: 2px solid #1e4847;
 }
 
 .portfolio .filter-buttons {
@@ -797,7 +644,7 @@ margin: 15px 0 0px;
 .portfolio .portfolio-gallery .item .overlay .fa{
     height: 50px;
     width: 50px;
-    background-color: #5CB5C3;;
+    background-color: #e88888;
     color: #ffffff;
     display: inline-block;
     text-align: center;
@@ -1001,8 +848,12 @@ footer{
 
 footer .logo{
     display: flex;
-    width: 50px;
     margin: auto;
+    justify-content: center;
+}
+
+footer .logo img{
+    width: 25%;
 }
 
 .copyright{

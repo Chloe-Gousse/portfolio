@@ -83,42 +83,42 @@ const galleryItem=gallery.querySelectorAll(".item");
 
 
 
-//------------PopUp -----------------// 
+//------------PopUp -----------------
 
 
-const closePopup=document.querySelector(".close-popup");
-const popup=document.querySelector(".popup");
-const popupImage=popup.querySelector("iframe");
+// const closePopup=document.querySelector(".close-popup");
+// const popup=document.querySelector(".popup");
+// const popupImage=popup.querySelector("iframe");
 
-            // Pour fermer la fenêtre en cliquant hors de l'image 
+//             //Pour fermer la fenêtre en cliquant hors de l'image 
 
-            popup.addEventListener("click", function(){
-               if(event.target!=popupImage){
-                    popup.classList.remove("show");
-                    popup.classList.add("hide");
-               }
-            })
+//             popup.addEventListener("click", function(){
+//                if(event.target!=popupImage){
+//                     popup.classList.remove("show");
+//                     popup.classList.add("hide");
+//                }
+//             })
 
-            // La fenêtre se ferme lorsqu'on clique sur la croix //
+//             //La fenêtre se ferme lorsqu'on clique sur la croix //
 
-            closePopup.addEventListener("click", function(){
-                popup.classList.remove("show");
-                popup.classList.add("hide");
-            })
+//             closePopup.addEventListener("click", function(){
+//                 popup.classList.remove("show");
+//                 popup.classList.add("hide");
+//             })
 
             // La fenêtre apparait lorsqu'on clique sur le bouton plus //
 
-const illustration=document.querySelector(".illustration");
-const illustrationItem=illustration.querySelectorAll(".illustration-item");
+// const illustration=document.querySelector(".illustration");
+// const illustrationItem=illustration.querySelectorAll(".illustration-item");
 
-            illustrationItem.forEach(function(element){
-                element.querySelector(".fa-play").addEventListener("click", function(event){
-                    popup.classList.remove("hide");
-                    popup.classList.add("show");
-                    popupImage.src=event.currentTarget.getAttribute("data-video");
-                    popupImage.contentWindow.location.reload();
-                })
-            }) 
+//             illustrationItem.forEach(function(element){
+//                 element.querySelector(".fa-play").addEventListener("click", function(event){
+//                     popup.classList.remove("hide");
+//                     popup.classList.add("show");
+//                     popupImage.src=event.currentTarget.getAttribute("data-video");
+//                     popupImage.contentWindow.location.reload();
+//                 })
+//             }) 
 
 
 
@@ -128,15 +128,8 @@ const illustrationItem=illustration.querySelectorAll(".illustration-item");
 
 
 
-
-
-
-
-
-
-
-
 //------------ Header -------------- //
+   
     window.onscroll=function(){
        const docScrollTop=document.documentElement.scrollTop; 
 
