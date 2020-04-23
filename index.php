@@ -97,7 +97,7 @@
                                 </div>
 
                                 <div class="player">
-                                        <img src="./src/img/About/player5.png" alt="player">
+                                        <a href="https://www.youtube.com/watch?v=3dwNlJ-dgbs&t=1s" target="_blank"><img src="./src/img/About/player5.png" alt="player"></a>
                                 </div>
 
                                 
