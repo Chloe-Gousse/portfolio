@@ -315,13 +315,15 @@ header .navbar ul li a.active::before{
 }
 
 .about-me .about-content .description iframe{
-
   width: 854px;
   height: 480px;
   display: inline-block;
   border: 20px solid black;
   border-radius: 20px;
+}
 
+.about-me .about-content .player{
+    display: none;
 }
 
 .about-me .about-content h4{
@@ -1059,7 +1061,15 @@ footer .logo img{
     .about-me .about-content .text .description p{
         font-size: 20px;
     }
- 
+
+    .about-me .about-content .description iframe{
+        width: 640px;
+        height: 360px;
+    }
+    
+    .about-me .about-content .social-links {
+        width: 30%;
+    }
 
 
 }
@@ -1104,4 +1114,46 @@ footer .logo img{
         line-height: 30px;
     }
 
+    .about-me .about-content .description iframe{
+        width: 426px;
+        height: 240px;
+    }
+
+    .about-me .about-content .social-links {
+        width: 40%;
+    }
+
+}
+
+
+@media(max-width: 375px){
+    .about-me .about-content .description iframe{
+        display: none;
+    }
+
+    .about-me .about-content .player{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-me .about-content .player img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-me .about-content .social-links {
+        width: 50%;
+    }
+
+
+}
+
+.status {
+    font-size: 15px;
+    color: green; 
+    padding: 15px; 
+}
+
+.status span {
+    color : red;
 }

@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="src/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
     <body>
@@ -93,6 +94,10 @@
 
                                 <div class="description">
                                     <iframe src="https://www.youtube.com/embed/3dwNlJ-dgbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+
+                                <div class="player">
+                                        <img src="./src/img/About/player5.png" alt="player">
                                 </div>
 
                                 
@@ -503,11 +508,56 @@
                                         </div>
                                     </div>
 
+                                    <div class="g-recaptcha" data-sitekey="6LcsM-0UAAAAAMCu2OTeojGATIQH7OxRwlRm1qzC"></div>
+                                    <br/>
+
                                     <div class="row">
                                         <div class="button text-right">
                                             <input type="submit" class="button text-right" value="C'est parti !">
                                             <!--<a href="">C'est parti !</a>-->
                                         </div>
+                                    </div>
+
+                                    <div class="status">
+
+                                        <?php 
+                                        if(isset($_POST['submit']))
+                                        {
+                                            $User_name = $_POST['name'];
+                                            $User_email = $_POST['email'];
+                                            $User_message = $_POST['message'];
+
+                                            $email_from = 'contact@chloegousse.com';
+                                            $email_subject = "Nouveau message du formulaire";
+                                            $email_body = "Name: $User_name.\n".
+                                                            "Email Id: $User_email.\n". 
+                                                            "Message visiteur : $User_message.\n". 
+
+                                            $to_email = "goussechloe@gmail.com";
+                                            $headers = "From: $email_from \r\n";
+                                            $headers .= "Reply-To: $User_email\r\n";
+
+                                            $secretKey = "6LcsM-0UAAAAAE_YoCe5Km4X3MZWBy6zc2WApYRn";
+                                            $reponseKey = $_POST['g-recaptcha-response'];
+                                            $UserIP = $_SERVER['REMOTE_ADDR'];
+                                            $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$reponseKey&remoteip=$UserIP";
+
+                                            $response = file_get_contents($url);
+                                            $response = json_decode($response);
+
+                                            if ($response->success)
+                                            {
+                                                mail($to_email,$email_subject,$email_body,$headers);
+                                                echo "Message bien envoyé";
+                                            }
+                                            else 
+                                            {
+                                                echo "<span>Captcha invalide, réessayez svp</span>";
+                                            }
+                                        }
+
+                                        ?>
+
                                     </div>
 
                                     </form>
