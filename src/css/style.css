@@ -815,7 +815,7 @@ margin: 15px 0 0px;
     color: #838383;
 }
 
-.contact-us .contact-form .button{
+.contact-us .contact-form .starter-template .button{
     flex: 0 0 100%;
     max-width: 100%;
     border-radius: 4px;
@@ -829,13 +829,38 @@ margin: 15px 0 0px;
     padding: 15px 15px 15px 15px;
 }
 
-.contact-us .contact-form .button a{
-    
-}
 
-.contact-us .contact-form .button a:hover{
+.contact-us .contact-form .starter-template .button a:hover{
     background-color: #000000;
     color: #ffffff;
+}
+
+.contact-us .contact-form .starter-template .alert-danger{
+    background-color: #e88888;
+    padding: 14px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 20px;
+    color: white;
+}
+
+.contact-us .contact-form .starter-template .alert-success{
+    background-color: #1e4847;
+    padding: 14px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 20px;
+    color: white;
+}
+
+
+
+.starter-template {
+    padding-top: 40px;
+}
+
+.contact-us .contact-form .select{
+    display: none;
 }
 
 
