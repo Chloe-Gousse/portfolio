@@ -639,6 +639,12 @@ margin: 15px 0 0px;
     transition: all .5s ease;
 }
 
+.portfolio .portfolio-gallery .item .overlay .icons span{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
 .portfolio .portfolio-gallery .item:hover .overlay{
     opacity: 1;
 }

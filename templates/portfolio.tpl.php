@@ -42,6 +42,19 @@
                                     </div>
                                 </div>
 
+                                <div class="item" data-id="code">
+                                    <div class="inner">
+                                        <img src="./src/img/Portfolio/code1.png" alt="portfolio">
+                                        <div class="overlay">
+                                            <div class="icons">
+                                                <span class="fa fa-play" data-video="https://www.youtube.com/embed/UNnGzl2b6qE"></span>
+                                                <a href="https://github.com/Chloe-Gousse/Frames" target="_blank"><span class="fa fa-github-alt"></span></a>
+                                            </div>
+                                            <h4>Code</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="item" data-id="communication">
                                     <div class="inner">
                                         <img src="./src/img/Portfolio/comm3.png" alt="portfolio">
