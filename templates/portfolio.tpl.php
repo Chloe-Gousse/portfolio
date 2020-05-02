@@ -47,7 +47,7 @@
                                         <img src="./src/img/Portfolio/code1.png" alt="portfolio">
                                         <div class="overlay">
                                             <div class="icons">
-                                                <span class="fa fa-play" data-video="https://www.youtube.com/embed/UNnGzl2b6qE"></span>
+                                                <span class="fa fa-play" data-video="https://www.youtube.com/embed/_nB6IYZKLJQ"></span>
                                                 <a href="https://github.com/Chloe-Gousse/Frames" target="_blank"><span class="fa fa-github-alt"></span></a>
                                             </div>
                                             <h4>Code</h4>
@@ -75,12 +75,26 @@
                                     </div>
                                 </div>
 
+
                                 <div class="item" data-id="animation">
                                     <div class="inner">
                                         <img src="./src/img/Portfolio/anim1.png" alt="portfolio">
                                         <div class="overlay">
                                             <span class="fa fa-play" data-video="https://www.youtube.com/embed/0tv_4excAZs"></span>
                                             <h4>Animation</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item" data-id="code">
+                                    <div class="inner">
+                                        <img src="./src/img/Portfolio/code2.png" alt="portfolio">
+                                        <div class="overlay">
+                                            <div class="icons">
+                                                <span class="fa fa-play" data-video="https://www.youtube.com/embed/eNcMop2jcGY"></span>
+                                                <a href="https://github.com/Chloe-Gousse/French-Touch" target="_blank"><span class="fa fa-github-alt"></span></a>
+                                            </div>
+                                            <h4>Code</h4>
                                         </div>
                                     </div>
                                 </div>

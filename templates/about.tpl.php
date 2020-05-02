@@ -22,11 +22,11 @@
                             
 
                                 <div class="description">
-                                    <iframe src="https://www.youtube.com/embed/3dwNlJ-dgbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe src="https://www.youtube.com/embed/TXcZdG0HhDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
 
                                 <div class="player">
-                                        <a href="https://www.youtube.com/watch?v=3dwNlJ-dgbs&t=1s" target="_blank"><img src="./src/img/About/player5.png" alt="player"></a>
+                                        <a href="https://www.youtube.com/watch?v=TXcZdG0HhDo&feature=youtu.be" target="_blank"><img src="./src/img/About/player5.png" alt="player"></a>
                                 </div>
 
                                 

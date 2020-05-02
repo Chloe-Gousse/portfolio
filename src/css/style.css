@@ -1108,7 +1108,7 @@ footer .logo img{
 @media(max-width: 500px){
     .home .home-content .block h1{
         width: 100%;
-        font-size: 45px;
+        font-size: 40px;
         text-align: center;
     }
     .home .home-content .block h3{
@@ -1146,8 +1146,17 @@ footer .logo img{
     }
 
     .about-me .about-content .description iframe{
-        width: 426px;
-        height: 240px;
+        display: none;
+    }
+
+    .about-me .about-content .player{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-me .about-content .player img{
+        width: 200px;
+        height: 200px;
     }
 
     .about-me .about-content .social-links {
