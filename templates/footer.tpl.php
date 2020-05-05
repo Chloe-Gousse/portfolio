@@ -12,7 +12,7 @@
         <section class="copyright">
             <div class="container">
                 <p>&copy; 2020 - tous droits réservés </p>
-                <a href="https://fr.freepik.com/photos-vecteurs-libre/conception" target="_blank">Conception vecteur créé par stories - fr.freepik.com</a>
+                <a href="https://fr.freepik.com/photos-vecteurs-libre/conception" target="_blank"><p>Conception vecteur créé par stories - fr.freepik.com</p></a>
             </div>
 
         </section>

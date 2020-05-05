@@ -1,4 +1,3 @@
-
 //------------ Gallery ------------- //
 
 const filterButtons=document.querySelector("#filter-btns").children;
@@ -42,87 +41,68 @@ const items=document.querySelector(".portfolio-gallery").children;
 
 const closeLightbox=document.querySelector(".close-lightbox");
 const lightbox=document.querySelector(".lightbox");
-const lightboxImage=lightbox.querySelector("iframe");
 
-            // Pour fermer la fenêtre en cliquant hors de l'image 
+ // 2. This code loads the IFrame Player API code asynchronously.
+        let tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        
+        let firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-            lightbox.addEventListener("click", function(){
-               if(event.target!=lightboxImage){
-                    lightbox.classList.remove("show");
-                    lightbox.classList.add("hide");
-               }
-            })
+        let ytPlayerReady = false; 
+        var players;
+
+        function onYouTubeIframeAPIReady() {
+            ytPlayerReady = true;
+        }
+
+        function loadYTPlayer(idvideo){
+            if (ytPlayerReady) {
+            players = new YT.Player('players', {
+                      height: '360',
+                      width: '640',
+                      videoId: idvideo,
+                      events: {
+                        'onReady': onPlayerReady
+                      }
+                    });
+            }
+            }
+            function onPlayerReady(event) {
+                event.target.playVideo();
+              }
+            
+            function stopVideo() {
+                players.stopVideo();
+              }
+
+const gallery=document.querySelector(".portfolio-gallery");
+const galleryItem=gallery.querySelectorAll(".item");
+const lightboxImage=document.querySelector("#players");
 
             // La fenêtre se ferme lorsqu'on clique sur la croix //
 
             closeLightbox.addEventListener("click", function(){
                 lightbox.classList.remove("show");
                 lightbox.classList.add("hide");
+                stopVideo();
+                players.destroy();
             })
 
             // La fenêtre apparait lorsqu'on clique sur le bouton plus //
-
-const gallery=document.querySelector(".portfolio-gallery");
-const galleryItem=gallery.querySelectorAll(".item");
 
             galleryItem.forEach(function(element){
                 element.querySelector(".fa-play").addEventListener("click", function(event){
                     lightbox.classList.remove("hide");
                     lightbox.classList.add("show");
-                    lightboxImage.src=event.currentTarget.getAttribute("data-video");
-                    lightboxImage.contentWindow.location.reload();
+                    loadYTPlayer(event.currentTarget.getAttribute("data-video"));
+                    
                 })
             }) 
         // ----- Lightbox ------ //
 //------------ Gallery ------------- //
 
 
-
-
-
-
-
-
-//------------PopUp -----------------
-
-
-// const closePopup=document.querySelector(".close-popup");
-// const popup=document.querySelector(".popup");
-// const popupImage=popup.querySelector("iframe");
-
-//             //Pour fermer la fenêtre en cliquant hors de l'image 
-
-//             popup.addEventListener("click", function(){
-//                if(event.target!=popupImage){
-//                     popup.classList.remove("show");
-//                     popup.classList.add("hide");
-//                }
-//             })
-
-//             //La fenêtre se ferme lorsqu'on clique sur la croix //
-
-//             closePopup.addEventListener("click", function(){
-//                 popup.classList.remove("show");
-//                 popup.classList.add("hide");
-//             })
-
-            // La fenêtre apparait lorsqu'on clique sur le bouton plus //
-
-// const illustration=document.querySelector(".illustration");
-// const illustrationItem=illustration.querySelectorAll(".illustration-item");
-
-//             illustrationItem.forEach(function(element){
-//                 element.querySelector(".fa-play").addEventListener("click", function(event){
-//                     popup.classList.remove("hide");
-//                     popup.classList.add("show");
-//                     popupImage.src=event.currentTarget.getAttribute("data-video");
-//                     popupImage.contentWindow.location.reload();
-//                 })
-//             }) 
-
-
-
-// ----------PopUp ------------------//
 
 
 
@@ -152,14 +132,12 @@ const galleryItem=gallery.querySelectorAll(".item");
     a=navbar.querySelectorAll("a");
 
     a.forEach(function(element){
-        addEventListener("click", function(){
+        element.addEventListener("click", function(event){
 
             for(let i=0; i<a.length; i++){
                 a[i].classList.remove("active");
             }
-            this.classList.add("active")
-            // pour fermer la navbar lorsque je clique sur le lien //
-            document.querySelector(".navbar").classList.toggle("show");
+            event.currentTarget.classList.add('active');
 
         })
     })
@@ -170,9 +148,7 @@ const galleryItem=gallery.querySelectorAll(".item");
 //------------ Ham-Burger -------------- //
 const hamBurger=document.querySelector(".ham-burger");
 
-hamBurger=addEventListener("click", function(){
+hamBurger.addEventListener("click", function(){
     document.querySelector(".navbar").classList.toggle("show");
 })
 //------------ Ham-Burger -------------- //
-
-

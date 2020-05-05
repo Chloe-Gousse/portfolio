@@ -1,4 +1,6 @@
  <!--Portfolio-->
+
+
  <section class="portfolio" id="portfolio">
                 <div class="container">
                     <div class="row">
@@ -26,7 +28,7 @@
                                     <div class="inner">
                                         <img src="./src/img/Portfolio/comm1.png" alt="portfolio">
                                         <div class="overlay">
-                                            <span class="fa fa-play" data-video="https://www.youtube.com/embed/61cLwjxioWM"></span>
+                                            <span class="fa fa-play" data-video="61cLwjxioWM"></span>
                                             <h4>Communication</h4>
                                         </div>
                                     </div>
@@ -36,7 +38,7 @@
                                     <div class="inner">
                                         <img src="./src/img/Portfolio/comm2.png" alt="portfolio">
                                         <div class="overlay">
-                                            <span class="fa fa-play" data-video="https://www.youtube.com/embed/UNnGzl2b6qE"></span>
+                                            <span class="fa fa-play" data-video="UNnGzl2b6qE"></span>
                                             <h4>Communication</h4>
                                         </div>
                                     </div>
@@ -47,7 +49,7 @@
                                         <img src="./src/img/Portfolio/code1.png" alt="portfolio">
                                         <div class="overlay">
                                             <div class="icons">
-                                                <span class="fa fa-play" data-video="https://www.youtube.com/embed/_nB6IYZKLJQ"></span>
+                                                <span class="fa fa-play" data-video="nB6IYZKLJQ"></span>
                                                 <a href="https://github.com/Chloe-Gousse/Frames" target="_blank"><span class="fa fa-github-alt"></span></a>
                                             </div>
                                             <h4>Code</h4>
@@ -59,7 +61,7 @@
                                     <div class="inner">
                                         <img src="./src/img/Portfolio/comm3.png" alt="portfolio">
                                         <div class="overlay">
-                                            <span class="fa fa-play" data-video="https://www.youtube.com/embed/NdzCLS9o2NM"></span>
+                                            <span class="fa fa-play" data-video="NdzCLS9o2NM"></span>
                                             <h4>Communication</h4>
                                         </div>
                                     </div>
@@ -69,7 +71,7 @@
                                     <div class="inner">
                                         <img src="./src/img/Portfolio/comm4.png" alt="portfolio">
                                         <div class="overlay">
-                                            <span class="fa fa-play" data-video="https://www.youtube.com/embed/5rrMtS5GK20"></span>
+                                            <span class="fa fa-play" data-video="5rrMtS5GK20"></span>
                                             <h4>Communication</h4>
                                         </div>
                                     </div>
@@ -80,7 +82,7 @@
                                     <div class="inner">
                                         <img src="./src/img/Portfolio/anim1.png" alt="portfolio">
                                         <div class="overlay">
-                                            <span class="fa fa-play" data-video="https://www.youtube.com/embed/0tv_4excAZs"></span>
+                                            <span class="fa fa-play" data-video="0tv_4excAZs"></span>
                                             <h4>Animation</h4>
                                         </div>
                                     </div>
@@ -91,7 +93,7 @@
                                         <img src="./src/img/Portfolio/code2.png" alt="portfolio">
                                         <div class="overlay">
                                             <div class="icons">
-                                                <span class="fa fa-play" data-video="https://www.youtube.com/embed/eNcMop2jcGY"></span>
+                                                <span class="fa fa-play" data-video="eNcMop2jcGY"></span>
                                                 <a href="https://github.com/Chloe-Gousse/French-Touch" target="_blank"><span class="fa fa-github-alt"></span></a>
                                             </div>
                                             <h4>Code</h4>
@@ -103,7 +105,7 @@
                                     <div class="inner">
                                         <img src="./src/img/Portfolio/comm5.png" alt="portfolio">
                                         <div class="overlay">
-                                            <span class="fa fa-play" data-video="https://www.youtube.com/embed/HTe4U6XsVmo"></span>
+                                            <span class="fa fa-play" data-video="HTe4U6XsVmo"></span>
                                             <h4>Communication</h4>
                                         </div>
                                     </div>
@@ -116,14 +118,9 @@
             </section>
         <!--End de mon Portfolio-->
 
-
 <!--LightBox-->
 <div class="lightbox hide">
-
-<span class="close-lightbox fa fa-close"></span>
-
-<iframe width="856" height="482" src="https://www.youtube.com/embed/61cLwjxioWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <span class="close-lightbox fa fa-close"></span>
+    <div id="players"></div>
 </div>
-
 <!--End de ma LightBox-->

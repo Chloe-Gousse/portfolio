@@ -695,6 +695,12 @@ margin: 15px 0 0px;
     100%{
         transform: translateY(0); opacity: 1;
     }
+
+}
+
+#players {
+    border: 15px solid black;
+    border-radius: 15px;
 }
 
 
@@ -736,7 +742,7 @@ margin: 15px 0 0px;
     z-index: 101;
 }
 
-.lightbox iframe{
+.lightbox #players{
     max-width: 90%;
     max-height: 80%;
     display: block;
