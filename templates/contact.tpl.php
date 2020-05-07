@@ -3,7 +3,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title text-center">
-                            <h1>Prendre contact ?</h1>
+                            <h2>Prendre contact ?</h2>
                         </div>
                     </div>
 

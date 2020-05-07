@@ -31,7 +31,7 @@ body{
     margin-bottom: 40px;
 }
 
-.section-title h1{
+.section-title h2{
     display: inline-block;
     font-size: 35px;
     text-transform: uppercase;
@@ -41,7 +41,7 @@ body{
     position: relative;
 }
 
-.section-title h1:before{
+.section-title h2:before{
     content:'';
     left: 0;
     position: absolute;
@@ -63,7 +63,9 @@ body{
     text-align: right!important;
 }
 
-
+strong {
+    font-weight:normal;
+  }
 
 
 
@@ -220,7 +222,7 @@ header .navbar ul li a.active::before{
     animation: fadeIn 2s;
 }
 
-.home .home-content .block h3{
+.home .home-content .block h2{
     color: #ffffff;
     font-size: 40px;
     font-weight: 500;
@@ -300,11 +302,15 @@ header .navbar ul li a.active::before{
     justify-content: center;
 }
 
+.about-me .about-content article {
+    max-width: 75%;
+    margin: auto;
+}
+
 .about-me .about-content .texte{
     display: flex;
-    align-self: center;
+    flex-direction: column;
     margin-bottom: 50px;
-    max-width: 75%;
     text-align: center;
     color: #1e4847;
 }
@@ -456,7 +462,7 @@ header .navbar ul li a.active::before{
     line-height: 60px;
 }
 
-.parcours .parcours-content .box h5{
+.parcours .parcours-content .box h3{
     font-size: 20px;
     font-weight: 600;
     color: #000000;
@@ -675,7 +681,7 @@ margin: 15px 0 0px;
     }
 }
 
-.portfolio .portfolio-gallery .item .overlay h4{
+.portfolio .portfolio-gallery .item .overlay h3{
     margin-top: 15px;
     font-size: 25px;
     color: #ffffff;
@@ -683,7 +689,7 @@ margin: 15px 0 0px;
 }
 
 
-.portfolio .portfolio-gallery .item:hover .overlay h4{
+.portfolio .portfolio-gallery .item:hover .overlay h3{
     -webkit-animation: galleryText .8s ease;
     animation: galleryText .8s ease;
 }

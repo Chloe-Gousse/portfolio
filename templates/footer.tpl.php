@@ -21,6 +21,9 @@
 
         <script src="./src/js/script.js"></script>
 
+
+    </main>
+
     </body>
 </html><?php
 unset($_SESSION['inputs']);

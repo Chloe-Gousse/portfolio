@@ -5,7 +5,7 @@
                         <div class="competences-content">
                             <div class="row">
                                 <div class="section-title">
-                                    <h1>Compétences</h1>
+                                    <h2>Compétences</h2>
                                     
                                 </div>
                             </div>
@@ -54,7 +54,7 @@
                                 </div>
 
                                 <div class="competences-box">
-                                    <h6>ADOBE (Premiere, After Effect etc.)</h6>
+                                    <h6>ADOBE</h6>
                                     <div class="competence-bar">
                                         <div class="competence-bar-in" style="width:85%">
                                             <span>85%</span>
